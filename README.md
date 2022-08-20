@@ -9,7 +9,12 @@ npm install @iced/js-typing
 ```
 
 使用方式
-```
+```ts
 import { WebComponents } from "@iced/js-typing";
 class Shadow extends HTMLElement implements WebComponents {}
+```
+```js
+import {ESlintConfig} from "@iced/js-typing"
+/** @type {ESlintConfig}*/
+const rules= {}
 ```
