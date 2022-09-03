@@ -1,4 +1,4 @@
-declare namespace Eslint {
+export namespace Eslint {
     type ParserOptions = {
         ecmaVersion: 6;
         sourceType: "module";
@@ -14,27 +14,37 @@ declare namespace Eslint {
         RuleStrictMode<RulesValue> &
         RulePossibleErrors<RulesValue>;
     /**这些规则只与 ES6 有关, 即通常所说的 ES2015：*/
-    type RuleECMAScript6<T> = {};
+    type RuleECMAScript6<T> = {   // TODO:ES6 
+    };
     /**这些规则是关于风格指南的，而且是非常主观的*/
-    type RulesStylisticIssues<T> = {
+    type RulesStylisticIssues<T> = { // TODO:ES6 
         /** 在数组开括号后和闭括号前强制换行 */
         "array-bracket-newline": T;
         /** 强制数组方括号中使用一致的空格 */
         "array-bracket-spacing": T;
     };
     /**Node.js 或 CommonJS的*/
-    type RuleNodeAndCommon<T> = {};
+    type RuleNodeAndCommon<T> = {// TODO:ES6 
+
+    };
     /**变量声明*/
-    type RuleVariables<T> = {};
+    type RuleVariables<T> = {// TODO:ES6 
+
+    };
     /**严格模式有关*/
-    type RuleStrictMode<T> = {
+    type RuleStrictMode<T> = { // TODO:ES6 
         /**要求或禁止使用严格模式指令*/
         strict: T;
     };
     /**这些规则与 JavaScript 代码中可能的错误或逻辑错误有关：*/
-    type RulePossibleErrors<T> = {};
+    type RulePossibleErrors<T> = { // TODO:ES6 
+
+    };
     /**这些规则是关于最佳实践的，帮助你避免一些问题*/
-    type RuleBest = {};
+    type RuleBest = {           // TODO:ES6 
+
+    }
+        ;
     /**规则的值*/
     type RulesValue =
         | "off"
